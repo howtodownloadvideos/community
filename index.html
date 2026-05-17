@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to Download Videos Community</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f5f7fb;
+        --card: #ffffff;
+        --text: #1d2433;
+        --muted: #5f6b7a;
+        --accent: #2d6df6;
+        --border: #dce3ef;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+      }
+
+      .layout {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 1.25rem;
+        display: grid;
+        grid-template-columns: 260px 1fr;
+        gap: 1rem;
+      }
+
+      .panel {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 1rem;
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0 0 0.75rem 0;
+      }
+
+      .community-title {
+        margin-bottom: 1rem;
+      }
+
+      .community-title p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+      }
+
+      .tag {
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        padding: 0.2rem 0.65rem;
+        font-size: 0.8rem;
+        color: var(--muted);
+      }
+
+      .post-list {
+        display: grid;
+        gap: 0.85rem;
+      }
+
+      .post {
+        display: grid;
+        grid-template-columns: 56px 1fr;
+        gap: 0.8rem;
+      }
+
+      .votes {
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        text-align: center;
+        padding: 0.45rem 0.2rem;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      .votes strong {
+        color: var(--text);
+        display: block;
+        font-size: 1.05rem;
+      }
+
+      .post-meta {
+        color: var(--muted);
+        font-size: 0.82rem;
+        margin-bottom: 0.35rem;
+      }
+
+      .post h3 {
+        margin: 0 0 0.4rem 0;
+        font-size: 1.04rem;
+      }
+
+      .post p {
+        margin: 0 0 0.55rem 0;
+        color: #3e4856;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+        color: var(--muted);
+        font-size: 0.82rem;
+      }
+
+      .actions span {
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        padding: 0.2rem 0.55rem;
+      }
+
+      .cta {
+        margin-top: 0.85rem;
+        display: inline-block;
+        text-decoration: none;
+        background: var(--accent);
+        color: white;
+        padding: 0.55rem 0.8rem;
+        border-radius: 8px;
+        font-weight: 600;
+      }
+
+      @media (max-width: 840px) {
+        .layout {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="layout">
+      <aside class="panel">
+        <div class="community-title">
+          <h1>r/downloadvideos</h1>
+          <p>Discussions for tools, tips, and troubleshooting.</p>
+        </div>
+
+        <h2>Popular Topics</h2>
+        <div class="tags">
+          <span class="tag">YouTube</span>
+          <span class="tag">Instagram</span>
+          <span class="tag">TikTok</span>
+          <span class="tag">4K</span>
+          <span class="tag">Audio Only</span>
+          <span class="tag">Open Source</span>
+        </div>
+
+        <h2 style="margin-top: 1rem">Community Rules</h2>
+        <ol style="padding-left: 1.1rem; margin: 0; color: var(--muted)">
+          <li>Share legal and ethical download methods only.</li>
+          <li>No spam, malware, or suspicious links.</li>
+          <li>Include device/browser details when asking for help.</li>
+        </ol>
+
+        <a class="cta" href="#">Start a Discussion</a>
+      </aside>
+
+      <section class="post-list" aria-label="Discussions feed">
+        <article class="panel post">
+          <div class="votes">▲<strong>86</strong>▼</div>
+          <div>
+            <div class="post-meta">u/videohelper • 5h ago • Beginner Guide</div>
+            <h3>Best free tools to download videos without watermark in 2026?</h3>
+            <p>I tested 7 tools this week. Happy to share what worked on desktop and mobile.</p>
+            <div class="actions">
+              <span>32 comments</span>
+              <span>save</span>
+              <span>share</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel post">
+          <div class="votes">▲<strong>57</strong>▼</div>
+          <div>
+            <div class="post-meta">u/codecnerd • 8h ago • Tutorial</div>
+            <h3>How to download high-quality videos with audio sync preserved</h3>
+            <p>
+              If your output gets desynced, this ffmpeg post-processing flow fixed it for me.
+            </p>
+            <div class="actions">
+              <span>18 comments</span>
+              <span>save</span>
+              <span>share</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel post">
+          <div class="votes">▲<strong>41</strong>▼</div>
+          <div>
+            <div class="post-meta">u/mobilefixer • 1d ago • Help</div>
+            <h3>Downloads failing only on Android Chrome—any workaround?</h3>
+            <p>
+              The same link works on desktop. Anyone else seeing downloads blocked after recent updates?
+            </p>
+            <div class="actions">
+              <span>24 comments</span>
+              <span>save</span>
+              <span>share</span>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
